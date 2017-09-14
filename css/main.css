@@ -1,0 +1,56 @@
+.good {
+  float: left;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px; }
+
+#basket {
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid blue; }
+
+.showReview {
+  display: block;
+  margin-top: 10px; }
+
+.product_reviews {
+  border-top: 1px solid gray; }
+
+.product_review {
+  background-color: gray;
+  min-height: 25px;
+  border-top: 1px solid #fff; }
+
+.product_addNewReview {
+  float: right;
+  font-size: 50%;
+  background-color: blue;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+  padding: 3px; }
+  .product_addNewReview:hover {
+    background-color: darkblue; }
+
+.product_textAbout {
+  margin-right: 70px; }
+
+.product_delete, .product_submit, .product_addPlus {
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  cursor: pointer; }
+  .product_delete:hover, .product_submit:hover, .product_addPlus:hover {
+    background-color: darkred; }
+
+.product_button_buy {
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */

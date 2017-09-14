@@ -1,0 +1,18 @@
+{
+	"result" : "1",
+	"basket" : [
+		{
+			"id_product" : "123",
+			"price" : "100"
+			},
+		{
+			"id_product" : "223",
+			"price" : "200"
+			},
+		{
+			"id_product" : "323",
+			"price" : "300"
+			}
+	],
+	"amount" : "600"
+}

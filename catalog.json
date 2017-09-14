@@ -1,0 +1,50 @@
+{
+	"result" : "1",
+	"goods" : [
+		{
+			"id_product" : "001",
+			"name" : "Медведь бурый",
+			"price" : "175",
+			"reviews" : [
+				{
+					"submit" : "5",
+					"textAbout" : "Очень хороший товар №1."
+				},
+				{
+					"submit" : "2",
+					"textAbout" : "Так себе, но хороший."
+				}
+			]
+		},
+		{
+			"id_product" : "002",
+			"name" : "Заяц с ушами",
+			"price" : "65",
+			"reviews" : [
+				{
+					"submit" : "6",
+					"textAbout" : "Плохой, но дешевый."
+				},
+				{
+					"submit" : "1",
+					"textAbout" : "Дырявый, всегда есть в наличии"
+				}
+			]
+		},
+		{
+			"id_product" : "003",
+			"name" : "Блоха с кодковой",
+			"price" : "25",
+			"reviews" : [
+				{
+					"submit" : "1",
+					"textAbout" : "Надо брать."
+				},
+				{
+					"submit" : "0",
+					"textAbout" : "Скоро закончится((("
+				}
+			]
+		}
+	]
+}

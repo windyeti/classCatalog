@@ -1,0 +1,53 @@
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<title>Корзина</title>
+	</head>
+	<body>
+		<div id="basket-wrapper"></div>
+		<div class="good">
+			<p>Товар №1</p>
+			<p>Цена: <span class="price">200</span></p>
+			<button class="buy" id="good_111">Купить </button>
+			<button class="showReview">Показать отзывы</button>
+		</div>
+		<div class="good">
+			<p>Товар №2</p>
+			<p>Цена: <span class="price">150</span></p>
+			<button class="buy" id="good_112">Купить</button>
+			<button class="showReview">Показать отзывы </button>
+		</div>
+		<div class="good">
+			<p>Товар №3</p>
+			<p>Цена: <span class="price">75</span></p>
+			<button class="buy" id="good_113">Купить</button>
+			<button class="showReview">Показать отзывы</button>
+		</div>
+		<div id="catalog-wrapper"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			var basket = new Basket();
+			basket.render('#basket-wrapper');
+			
+			$('.good').on('click', '.buy', function() {
+				var $this = $(this);
+				var idGood = $this.attr('id').split('_')[1];
+				var price = $this.parent().find('.price').text();
+			
+				basket.add(idGood, 1, price);
+			});
+			
+			//- var review = new Review();
+			//- review.getReviews('111');
+			//- $('.good').on('click', '.showReview', function() {
+			//- 	var $this = $(this);
+			//- 	var idGood = $this.parent().find('.buy').attr('id').split('_')[1];
+			//- 	//- console.log(§$this.text());
+			//- 	review.render(idGood, $this);
+			//- });
+		</script>
+	</body>
+</html>
